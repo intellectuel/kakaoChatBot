@@ -8,8 +8,9 @@ var server = app.listen(3100, function(){
  console.log("Express server has started on port 3000")
 });
  
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+// 
 app.use(session({
  secret: '@#@$MYSIGN#@$#$',
  resave: false,
