@@ -1,0 +1,34 @@
+{
+  "message": {
+    "text": "메뉴1를 선택했습니다."
+  },
+  "keyboard": {
+    "type": "buttons",
+    "buttons": [
+      "메뉴1",
+      "메뉴2",
+      "메뉴3"
+    ]
+  }
+}
+
+
+// {
+//   "message": {
+//     "text": "메뉴2를 선택했습니다.",
+//     "message_button": {
+//       "label": "라벨입니다.",
+//       "url": "https://cheese10yun.github.io/"
+//     }
+//   },
+//   "keyboard": {
+//     "type": "buttons",
+//     "buttons": [
+//       "메뉴1",
+//       "메뉴2",
+//       "메뉴3",
+//       "메뉴4",
+//       "메뉴5"
+//     ]
+//   }
+// }
