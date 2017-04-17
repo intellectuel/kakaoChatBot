@@ -4,7 +4,7 @@ module.exports = function(app, fs)
 {
 
 
-    app.get('/keyboard', function(req, res){
+    app.get('/api/keyboard', function(req, res){
        const menu = {
             type: 'buttons',
             buttons: ["메뉴1", "메뉴2", "메뉴3"]
@@ -16,7 +16,7 @@ module.exports = function(app, fs)
     });
 
 
-    app.post('/message', function(req, res){
+    app.post('/api/message', function(req, res){
     
         const _obj = {
             user_key: req.body.user_key,
