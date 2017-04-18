@@ -11,9 +11,7 @@
     "express-session": "^1.15.2",
     "fs": "0.0.1-security",
     "nodemon": "^1.11.0",
-    "request": "^2.81.0"
-  },
-  "devDependencies": {
+    "request": "^2.81.0",
     "restify": "^4.1.1"
   },
   "scripts": {
