@@ -1,19 +1,16 @@
 
 
-module.exports = function(app, fs)
-{
-
+module.exports = function(app, fs) {
 
     app.get('/keyboard', function(req, res){
-       const menu = {
-            type: 'buttons',
-            buttons: ["메뉴1", "메뉴2", "메뉴3"]
-        };
-
-        res.set({
-            'Content-Type': 'application/json'
-        }).send(JSON.stringify(menu));
+        fs.readFile( __dirname + "/../data/" + "keyboard.json", 'UTF-8', function (err, data) {
+           console.log( data );
+            res.set({
+                'Content-Type': 'application/json;charset=UTF-8'
+            }).end( data );
+        });
     });
+
 
 
     app.post('/message', function(req, res){
@@ -37,7 +34,7 @@ module.exports = function(app, fs)
             }
         };
         res.set({
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json;charset=UTF-8'
         }).send(JSON.stringify(massage));
     });
 

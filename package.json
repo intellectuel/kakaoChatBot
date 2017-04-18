@@ -14,10 +14,10 @@
     "request": "^2.81.0",
     "restify": "^4.1.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+ "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1",
+    "start": "nodemon server.js"
   },
-  "author": "",
+  "author": "sang-hyun.a.park",
   "license": "ISC"
 }
