@@ -4,19 +4,19 @@ module.exports = function(app, fs)
 {
 
 
-    app.get('/api/keyboard', function(req, res){
+    app.get('/keyboard', function(req, res){
        const menu = {
             type: 'buttons',
             buttons: ["메뉴1", "메뉴2", "메뉴3"]
         };
 
         res.set({
-            'content-type': 'application/json'
+            'Content-Type': 'application/json'
         }).send(JSON.stringify(menu));
     });
 
 
-    app.post('/api/message', function(req, res){
+    app.post('/message', function(req, res){
     
         const _obj = {
             user_key: req.body.user_key,
@@ -37,9 +37,9 @@ module.exports = function(app, fs)
             }
         };
         res.set({
-            'content-type': 'application/json'
+            'Content-Type': 'application/json'
         }).send(JSON.stringify(massage));
     });
 
 
-}
+}   
